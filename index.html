@@ -4,13 +4,13 @@
   <title>Spere</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="oKSKcRziDL3TGlf3rc3vcjGkFyUjn8E4jTwlAiIq9tI">
-  <link rel="icon" href="/assets/favicon-05b8c3456581ab4d7bcd236572695f50.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/assets/favicon-05b8c3456581ab4d7bcd236572695f50.ico" type="image/x-icon">
+  <link rel="icon" href="" type="image/x-icon">
+  <link rel="shortcut icon" href="" type="image/x-icon">
 
-  <meta property="og:title" content="Tacklebox"/>
-  <meta property="og:description" content="Welcome to Tacklebox, the app where friends help you respond to confusing messages."/>
-  <meta property="og:image" content="http://www.usetackle.com/assets/square_logo.png"/>
-  <meta property="og:url" content="http://www.usetackle.com/"/>
+  <meta property="og:title" content="Spere"/>
+  <meta property="og:description" content="Welcome to Spere, the app that gets you the best deal of the products you want."/>
+  <meta property="og:image" content="http://www.spereit.com/assets/square_logo.png"/>
+  <meta property="og:url" content="http://www.spereit.com/"/>
 
   <link href="/assets/index.css" media="all" rel="stylesheet" type="text/css" />
   <script src="/assets/index.js" type="text/javascript"></script>
@@ -56,7 +56,7 @@
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1 col-sm-offset-3 col-sm-6">
       <a href="/">
-          <img alt="White logo" class="center-block img-responsive" />
+          <img src="./sperelogo.png" alt="White logo" class="center-block img-responsive" width="13%;"/>
 </a>    </div>
   </div>
 
@@ -65,30 +65,31 @@
   <div class="row">
     <div class="col-xs-offset-4 col-xs-4">
       <a id="play-btn" href="#">
-        <img alt="Play" class="center-block img-responsive" src="/assets/Play-dfe5aae5c318b6e2f5606e1ec1eefad5.png" />
+        <img alt="Play" class="center-block img-responsive" src="/assets/Play-dfe5aae5c318b6e2f5606e1ec1eefad5.png" width="25%;" />
       </a>
     </div>
   </div>
 
   <div class="padder hidden-xs"></div>
 
-  <h1>Find the right prices.</h1>
+  <h1>Find it. Save it. Spere it.</h1>
 
   <div class="padder hidden-xs"></div>
 
-  <h3>Get the best price from <br>your trusted sites.</h3>
+  <h3>Discover the best prices from only your trusted sources.<br> Compare products to get the best deal.</h3>
 
   <div class="padder hidden-xs"></div>
 
           <div id="get-early-acceess">
             <button id="get-early-access-btn" class="btn btn-lg btn-light">Get Early Access</button>
             <div id="get-early-access-form">
-              <form accept-charset="UTF-8" action="/users/create" class="form form-inline" id="new_user" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="D0SBzkwAzsakuKTC0etragkaqgkd+a0JN1Fj1OI9zt0=" /></div>
+              <form accept-charset="UTF-8" action="/create.php" class="form form-inline" id="new_user" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="D0SBzkwAzsakuKTC0etragkaqgkd+a0JN1Fj1OI9zt0=" /></div>
                   <div class="form-group">
-                    <input class="form-control form-control-light" id="user_email" name="user[email]" placeholder="Enter Email" size="30" type="email" />
+                    <input class="form-control form-control-light" id="user_email" name="email" placeholder="Enter Email" size="30" type="email" />
                     <input type="submit" value="OK" class="btn btn-light">
                   </div>
-</form>            </div>
+              </form>
+            </div>
       </div>
 </div>
 
@@ -102,11 +103,11 @@
 
         if (Modernizr.touch) {
         $('#play-btn').click(function () {
-        window.open('http://player.vimeo.com/video/105458540');
+        window.open('');
         });
         } else {
         $('#play-btn').fancybox({
-        href: 'http://player.vimeo.com/video/105458540?autoplay=1',
+        href: '',
         type: 'iframe',
         padding: 0
         });
@@ -118,7 +119,7 @@
             BV.show('/assets/poster.jpg');
         } else {
             $('#big-video-wrap').hide();
-            BV.show("http://www.usetackle.com/assets/fullvideo-ef7c460cdd1b06126f9a6f97972067e3.mp4", { ambient: true });
+            BV.show("//http://www.usetackle.com/assets/fullvideo-ef7c460cdd1b06126f9a6f97972067e3.mp4", { ambient: true });
             BV.getPlayer()
 //                    .on('ended', function () {
 //                        this.pause();
